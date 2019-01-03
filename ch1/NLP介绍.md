@@ -54,5 +54,5 @@ Team 1 = Manchester United, "The game was between Manchester United and Barcelon
 Team 1 goals = 5, "Manchester United managed to get 5 goals"  
   
 &emsp;&emsp;**学习过程**可能包括三个子模块：**Hidden Markov Model（HMM）**，句子规划模块，语言规划模块。在我们的例子中，HMM可以通过分析相关短语的语料库来学习语言的形态结构和语法属性。 更具体地说，我们将连接数据集中的每个短语以形成一个序列，其中第一个元素是统计量，后跟解释它的短语。 然后，我们跟进当前序列训练一个HMM模型，并预测下一个单词。 具体地说，我们首先将统计数据输入HMM，继而得到HMM的预测; 然后，我们将最后一个预测连接到当前序列，并要求HMM给出另一个预测，依此类推。这将使HMM能够在给定统计数据的情况下输出有意义的短语。  
-&emsp;&emsp;接下来，我们可以有一个句子规划器来纠正我们可能在短语中出现的任何语言错误（例如，形态学或语法）。例如，一个句子规划器输出这个短语， _I go house as I go home_; 它可以使用规则数据库，其中包含传达意义的正确方法（例如，需要在动词和单词 _house_之间加介词）。
+&emsp;&emsp;接下来，我们可以有一个句子规划器来纠正我们可能在短语中出现的任何语言错误（例如，形态学或语法）。例如，一个句子规划器输出这个短语， _I go house as I go home_; 它可以使用规则数据库，其中包含传达意义的正确方法（例如，需要在动词和单词  _house_ 之间加介词）。  
 &emsp;&emsp;
