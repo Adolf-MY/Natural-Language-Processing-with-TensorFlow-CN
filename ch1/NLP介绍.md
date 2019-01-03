@@ -44,4 +44,8 @@ Bob bought the flowers to give to Mary
 * **n-gram**：这是另一种特征工程技术，它将文本分解为由n个字母（或单词）组成的较小组件。 例如，2-gram会将文本分成两个字母（或两个字）的实体。 例如，考虑这句话：  
 Bob went to the market to buy some flowers  
 这个句子的字母级别的n-gram分解如下：  
-\["Bo", "ob", "b ", " w", "we", "en", ..., "me", "e "," f", "fl", "lo", "ow", "we", "er", "rs"]
+\["Bo", "ob", "b ", " w", "we", "en", ..., "me", "e "," f", "fl", "lo", "ow", "we", "er", "rs"]  
+单词级别的n-gram分解如下：  
+\["Bob went", "went to", "to the", "the market", ..., "to buy", "buy some","some flowers"]  
+这种表示（字母级别）的优点是词汇量将比我们使用单词作为大型语料库的特征时要小得多。  
+接下来，我们需要构建我们的数据，以便能够将其提供给模型学习。 例如，我们将使用以下形式的数据元组（统计信息，解释统计信息的短语）：  
