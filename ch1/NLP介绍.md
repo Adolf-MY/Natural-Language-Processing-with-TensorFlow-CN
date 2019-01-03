@@ -53,4 +53,4 @@ Total goals = 4, "The game was tied with 2 goals for each team at the end of the
 Team 1 = Manchester United, "The game was between Manchester United and Barcelona"  
 Team 1 goals = 5, "Manchester United managed to get 5 goals"  
   
-&emsp;&emsp;**学习过程**可能包括三个子模块：**Hidden Markov Model（HMM）**，句子规划模块，语言规划模块。
+&emsp;&emsp;**学习过程**可能包括三个子模块：**Hidden Markov Model（HMM）**，句子规划模块，语言规划模块。在我们的例子中，HMM可以通过分析相关短语的语料库来学习语言的形态结构和语法属性。 更具体地说，我们将连接数据集中的每个短语以形成一个序列，其中第一个元素是统计量，后跟解释它的短语。 然后，我们跟进当前序列训练一个HMM模型，并预测下一个单词。 具体地说，我们首先将统计数据输入HMM，继而得到HMM的预测; 然后，我们将最后一个预测连接到当前序列，并要求HMM给出另一个预测，依此类推。这将使HMM能够在给定统计数据的情况下输出有意义的短语。
