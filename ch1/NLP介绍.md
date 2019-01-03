@@ -49,3 +49,8 @@ Bob went to the market to buy some flowers
 \["Bob went", "went to", "to the", "the market", ..., "to buy", "buy some","some flowers"]  
 这种表示（字母级别）的优点是词汇量将比我们使用单词作为大型语料库的特征时要小得多。  
 接下来，我们需要构建我们的数据，以便能够将其提供给模型学习。 例如，我们将使用以下形式的数据元组（统计信息，解释统计信息的短语）：  
+Total goals = 4, "The game was tied with 2 goals for each team at the end of the first half"  
+Team 1 = Manchester United, "The game was between Manchester United and Barcelona"  
+Team 1 goals = 5, "Manchester United managed to get 5 goals"  
+  
+&emsp;&emsp;**学习过程**可能包括三个子模块：**Hidden Markov Model（HMM）**，句子规划模块，语言规划模块。
