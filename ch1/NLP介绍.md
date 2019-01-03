@@ -34,6 +34,6 @@
 &emsp;&emsp;**分词**是可能需要执行的另一个预处理步骤。分词是将语料库划分为小实体（例如，单词）的过程。对于像英语这样的语言来说，这可能显得微不足道，因为这些词是分割的; 但是，对于某些语言（如泰语，日语和中文）而言，情况并非如此，因为这些语言并没有固有的划分。  
 &emsp;&emsp;**特征工程**用于将原始文本数据转换为更吸引人的数字格式，因为模型可以基于这种数据格式进行训练，例如，将文本转换为词袋表示或使用n-gram表示（我们将在稍后讨论）。但是请记住，当今最先进的经典模型依赖于更复杂的特征工程技术。以下是几个特征工程技术：  
 * **词袋**：这是一种特征工程技术，可根据单词出现频率创建特征表示。 例如，让我们考虑以下句子：  
-&emsp;&emsp;&emsp;Bob went to the market to buy some flowers   
-&emsp;&emsp;&emsp;Bob bought the flowers to give to Mary    
+&emsp;&emsp;Bob went to the market to buy some flowers   
+&emsp;&emsp;Bob bought the flowers to give to Mary   
 &emsp;&emsp;这两句话的词汇表是：\["Bob", "went", "to", "the", "market", "buy", "some", "flowers", "bought", "give", "Mary"]
