@@ -36,8 +36,9 @@
 * **词袋**：这是一种特征工程技术，可根据单词出现频率创建特征表示。 例如，让我们考虑以下句子：  
 Bob went to the market to buy some flowers  
 Bob bought the flowers to give to Mary  
-这两句话的词汇表是：\["Bob", "went", "to", "the", "market", "buy", "some", "flowers", "bought", "give", "Mary"]
+这两句话的词汇表是：\["Bob", "went", "to", "the", "market", "buy", "some", "flowers", "bought", "give", "Mary"]  
 接下来，我们为每一个句子生成一个V（词汇表长度）长度的特征向量，来表示词汇表中的词在句子中的出现次数。在这个例子中，两句话的特征向量是：  
 \[1, 1, 2, 1, 1, 1, 1, 1, 0, 0, 0]  
 \[1, 0, 2, 1, 0, 0, 0, 1, 1, 1, 1]  
 词袋方法的一个关键缺陷是，由于不再保留单词的顺序，它会丢失上下文信息。
+* **n-gram**：这是另一种特征工程技术，它将文本分解为由n个字母（或单词）组成的较小组件。 例如，2-gram会将文本分成两个字母（或两个字）的实体。 例如，考虑这句话：
