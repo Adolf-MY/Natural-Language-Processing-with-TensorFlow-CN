@@ -35,4 +35,5 @@
 &emsp;&emsp;**特征工程**用于将原始文本数据转换为更吸引人的数字格式，因为模型可以基于这种数据格式进行训练，例如，将文本转换为词袋表示或使用n-gram表示（我们将在稍后讨论）。但是请记住，当今最先进的经典模型依赖于更复杂的特征工程技术。以下是几个特征工程技术：  
 * **词袋**：这是一种特征工程技术，可根据单词出现频率创建特征表示。 例如，让我们考虑以下句子：  
 &emsp;&emsp;&emsp;Bob went to the market to buy some flowers   
-&emsp;&emsp;&emsp;Bob bought the flowers to give to Mary
+&emsp;&emsp;&emsp;Bob bought the flowers to give to Mary    
+&emsp;&emsp;这两句话的词汇表是：\["Bob", "went", "to", "the", "market", "buy", "some", "flowers", "bought", "give", "Mary"]
