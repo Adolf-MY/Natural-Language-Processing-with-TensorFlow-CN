@@ -83,7 +83,7 @@ Team 1 goals = 5, "Manchester United managed to get 5 goals"
 &emsp;&emsp;总之，我们可以将深度网络主要分为两类：非序列模型，一次只处理单个输入用于训练和预测（例如，图像分类），以及可以处理任意长度输入的序列模型（例如，一个单词作为输入的文本生成）。然后我们可以将非序列模型（也称为前馈）模型分类为深（大约少于20层）和非常深的网络（可以大于数百层）。序列模型被分类为短时记忆模型（例如，RNN），其只能记忆短期模式，和长期记忆模型，其可有更长的记忆模式。在图1.4中，我们描绘了所讨论的模型分类。其实不需要能完全理解这些不同的深度学习模型，它只是说明深度学习模型的多样性：  
 ![image](https://github.com/jiaojunming/Natural-Language-Processing-with-TensorFlow-CN/blob/master/image/ch1_4.jpg)
 ### 理解一个简单的深度模型-全连接神经网络
-&emsp;&emsp;现在让我们仔细研究深度神经网络，以便更好地理解.虽然深层模型有许多不同的变体，但让我们看一下最早的模型（可追溯到1950-60），称为 **全连接神经网络（Fully-Connected Neural Network，FCNN）** ，或者有时称为多层感知器。图1.5描绘了标准的三层FCNN。  
+&emsp;&emsp;现在让我们仔细研究一个深度神经网络，以便更好地理解。虽然深层模型有许多不同的变体，但让我们看一下最早的模型（可追溯到1950-60），称为 **全连接神经网络（Fully-Connected Neural Network，FCNN）** ，或者有时称为多层感知器。图1.5描绘了标准的三层FCNN。  
 &emsp;&emsp;
 &emsp;&emsp;
 &emsp;&emsp;
