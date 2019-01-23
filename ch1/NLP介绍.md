@@ -85,6 +85,7 @@ Team 1 goals = 5, "Manchester United managed to get 5 goals"
 ### 理解一个简单的深度模型-全连接神经网络
 &emsp;&emsp;现在让我们仔细研究一个深度神经网络，以便更好地理解。虽然深层模型有许多不同的变体，但让我们看一下最早的模型（可追溯到1950-60），称为 **全连接神经网络（Fully-Connected Neural Network，FCNN）** ，或者有时称为多层感知器。图1.5描绘了标准的三层FCNN。   
 &emsp;&emsp;FCNN的目标是将输入（例如，图像或句子）映射到特定标签或标注（例如，图像的对象类别），其通过对输入 _x_ 使用诸如 _h = sigma（W * x + b）_ 之类的变换来计算 _h_（ _x_ 的隐式表示）实现的，这里， _W_ 和 _b_ 分别是FCNN的权重和偏差， _sigma_ 是S形激活函数。接下来，将分类器（例如，softmax分类器）放置在FCNN之上，使得能够利用隐藏层中的学习特征来对输入进行分类。分类器，基本上是FCNN的一部分，可以看出是携带权重 _Ws_ 和偏差 _bs_ 的隐藏层，我们可以计算FCNN的最终输出， _output= softmax（Ws * h + bs）_ ，例如，softmax分类器提供分类器层输出的分数的归一化表示；标签被认为是具有最高softmax值的输出节点。然后，我们可以定义一个分类损失——计算预测输出标签和实际输出标签之间的差异，这种损失函数的一个例子是均方损失。如果你不理解损失函数的实际复杂性，你不必担心，我们将在后面的章节中讨论。接下来，使用标准随机优化器（例如，随机梯度下降）来优化神经网络参数 _W，b，Ws_ 和 _bs_ ，以减少所有输入的分类损失。图1.5描述了本段中针对三层FCNN解释的过程，我们将在 _第3章Word2vec-词向量的学习_ 中逐步介绍如何将这种模型用于NLP任务的细节。  
+![image](https://github.com/jiaojunming/Natural-Language-Processing-with-TensorFlow-CN/blob/master/image/ch1_5.jpg)
 &emsp;&emsp;
 &emsp;&emsp;
 &emsp;&emsp;
